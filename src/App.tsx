@@ -1,20 +1,31 @@
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "./components/ui/card";
+import { Label } from "./components/ui/label";
+import { Input } from "./components/ui/input";
 
 export function App() {
+  // const [ value, setValue] = useState(0)
+
+  // console.log(value);
+  // console.log(1);
+  
+
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <>
+      <Card className="bg-purple-700  items-center">
+       <div className="">
+         <CardContent className="">
+          <Label className="mb-1">E-mail</Label>
+          <Input/>
+         </CardContent>
+         <CardContent>
+          <Label className="mb-1">Senha</Label>
+          <Input/>
+         </CardContent>
+       </div>
+       <Button>Entrar</Button>
+      </Card>
+    </>
   )
 }
 
