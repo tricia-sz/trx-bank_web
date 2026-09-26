@@ -2,29 +2,38 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "./components/ui/card";
 import { Label } from "./components/ui/label";
 import { Input } from "./components/ui/input";
+import { useState } from "react";
+import Layout from "./components/Layout/Layout";
+import { login } from "./services/login";
 
 export function App() {
-  // const [ value, setValue] = useState(0)
+  const [ email, setEmail] = useState('')
 
-  // console.log(value);
-  // console.log(1);
-  
+  console.log('email digitado', email);
 
   return (
     <>
-      <Card className="bg-purple-700  items-center">
+    <Layout>
+      <Card className="bg-purple-700  items-center text-white">
        <div className="">
-         <CardContent className="">
-          <Label className="mb-1">E-mail</Label>
-          <Input/>
+         <CardContent className="py-2">
+          <Label className="mb-1" htmlFor="email">E-mail</Label>
+          <Input type="email" id="email" placeholder="email" value={email} onChange={(event) => setEmail(event.target.value)}/>
          </CardContent>
          <CardContent>
-          <Label className="mb-1">Senha</Label>
-          <Input/>
+          <Label className="mb-1" htmlFor="password">Senha</Label>
+          <Input type="password" id="password"/>
          </CardContent>
        </div>
-       <Button>Entrar</Button>
+       <Button 
+        className="bg-yellow-500 text-black hover:text-white"
+        onClick={() => login(email)}
+        >
+          Entrar
+        </Button>
       </Card>
+    </Layout>
+      
     </>
   )
 }
