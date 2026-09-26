@@ -14,7 +14,7 @@ export function App() {
   return (
     <>
     <Layout>
-      <Card className="bg-purple-700  items-center text-white">
+      <Card className="bg-blue-950  items-center text-white">
        <div className="">
          <CardContent className="py-2">
           <Label className="mb-1" htmlFor="email">E-mail</Label>
