@@ -8,7 +8,6 @@ export function App() {
     <>
     <Layout>
       <Card />
-      
     </Layout>
       
     </>

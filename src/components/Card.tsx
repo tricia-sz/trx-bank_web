@@ -33,6 +33,9 @@ export default function Card() {
   return (
     <>
       <SCard className="w-full bg-blue-950 items-center text-white">
+        {
+          userData === null || userData === undefined ? <h1>Carregando</h1> : <h1>Informações carregadas</h1>
+        }
         <h2 className="font-mono text-xs  text-cyan-400">Faça Login</h2>
       <div className="justify-center items-center ">
         <span className="font-mono text-md font-bold text-yellow-400">{userData?.name}</span> 
