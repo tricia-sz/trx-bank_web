@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Conta from "./pages/Card";
 import Extrato from "./pages/Extrato";
 import Pix from "./pages/Pix";
 import Negociar from "./pages/Negociar";
 import Layout from "./components/Layout/Layout";
+import Conta from "./pages/Conta";
 
 export function App() {
 

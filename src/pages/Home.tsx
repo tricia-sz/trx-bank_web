@@ -1,5 +1,7 @@
+import Card from "@/components/Card"
 import Conta from "./Conta"
 import Hero from "./Hero"
+import Login from "./Login"
 
 const Home = () => {
   return (
@@ -8,7 +10,7 @@ const Home = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="container flex justify-baseline ">
             <Hero />
-            <Conta />
+            <Login />
           </div>
         </div>
       </main>
