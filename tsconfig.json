@@ -14,5 +14,5 @@
     "src/**/*.spec.tsx",
     "src/**/*.tsx",
     "src/**/*.ts"
-  ]
+, "src/pages/Hero.tsx"  ]
 }
