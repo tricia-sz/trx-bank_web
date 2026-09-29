@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Pix = () => {
   return (
     <>
-    <SCard className="bg-amber-400 rounded-none items-center">
+    <SCard className="container rounded-none items-center">
      <h1>Page Pix</h1>
 
     </SCard>

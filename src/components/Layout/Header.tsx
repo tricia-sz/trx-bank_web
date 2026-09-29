@@ -8,6 +8,12 @@ export default function Header() {
             <h1 className="text-yellow-500 text-4xl font-mono  font-extrabold">Trx<span className="text-white">Bank</span></h1>
          </Link>
          <nav className="w-full text-white flex gap-24  font-mono justify-center text-xl">
+          <Link 
+           className=""
+            to="/"
+            >
+              Home
+           </Link>
            <Link 
            className=""
             to="/conta"

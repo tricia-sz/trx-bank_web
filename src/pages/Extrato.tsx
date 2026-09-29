@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Extrato = () => {
   return (
     <>
-    <SCard className="bg-amber-400 rounded-none items-center">
+    <SCard className="container items-center">
       <h1>Page Extrato</h1>
     </SCard>
      <Button
