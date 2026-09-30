@@ -6,13 +6,14 @@ import Negociar from "./pages/Negociar";
 import Layout from "./components/Layout/Layout";
 import Conta from "./pages/Conta";
 import ContaInfo from "./pages/ContaInfo";
+import {AppContextProvider} from './components/AppContext'
+
 
 export function App() {
-
-
   return (
    <BrowserRouter>
-    <Layout>
+     <AppContextProvider>
+      <Layout>
         <Routes>
         <Route path="/" element={ <Home />} />
         <Route path="/conta/:id" element={<Conta/>}/>
@@ -22,7 +23,7 @@ export function App() {
         <Route path="/negociar" element={<Negociar/>}/>
       </Routes>
     </Layout>
-      
+     </AppContextProvider>
    </BrowserRouter>
   )
 }

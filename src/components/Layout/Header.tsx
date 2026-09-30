@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../AppContext";
 
 export default function Header() {
+
+  const context = useContext(AppContext)
+  console.log("retorno do header context",context);
+  
   return (
     <header className="w-full flex justify-center bg-blue-950 border-b-8 border-b-sky-400  shadow-2xl shadow-accent-foreground py-4">
       <div className="w-9/12 p-8 flex justify-between items-center">

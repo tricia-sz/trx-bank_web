@@ -1,9 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { api } from "@/api/api";
 import { Spinner } from "@/components/ui/spinner";
 import Container from "@/components/Container";
 import {  useNavigate, useParams } from "react-router-dom";
+import { AppContext } from "@/components/AppContext";
 
 
 interface IUserData {
@@ -19,6 +20,10 @@ export default function Conta() {
   const {id} = useParams()
   const actualData = new Date()
   const navigate = useNavigate()
+
+  const context = useContext(AppContext)
+  console.log('context do Conta', context);
+  
   
   useEffect(() => {
     const getData = async () => {

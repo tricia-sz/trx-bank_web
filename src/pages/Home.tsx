@@ -1,5 +1,3 @@
-import Card from "@/components/Card"
-import Conta from "./Conta"
 import Hero from "./Hero"
 import Login from "./Login"
 
