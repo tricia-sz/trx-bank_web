@@ -21,10 +21,11 @@ export default function Conta() {
   const actualData = new Date()
   const navigate = useNavigate()
 
-  const context = useContext(AppContext)
-  console.log('context do Conta', context);
-  
-  
+  const {isLoggedIn} = useContext(AppContext)
+  console.log('retorno da pagina conta', isLoggedIn);
+
+  isLoggedIn && navigate('/') 
+
   useEffect(() => {
     const getData = async () => {
       const data: any | IUserData = await api
