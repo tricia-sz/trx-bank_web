@@ -1,7 +1,9 @@
 const conta = {
   email: 'tricia@trx.bank',
   password: '123456',
-  name: 'Trícia Souza'
+  name: 'Trícia',
+  balance: 3.800,
+  id:'1'
 }
 
 
